@@ -1,0 +1,16 @@
+<Context>
+ 
+  <Resource name="jdbc/project" 
+  			auth="Container" type="java.sql.DataSource"
+               maxActive="25" maxIdle="5" maxWait="10000"
+               username="root" password="root" 
+               driverClassName="com.mysql.cj.jdbc.Driver"
+               url="jdbc:mysql://127.0.0.1:3306/blood_reserves?useSSL=false"/>
+  <Resource name="jdbc/serwer1910176db" 
+  			auth="Container" type="java.sql.DataSource"
+               maxActive="25" maxIdle="5" maxWait="10000"
+               username="31817028_blood_reserves" password="rf4#fatt8_FB4x" 
+               driverClassName="com.mysql.cj.jdbc.Driver"
+               url="jdbc:mysql://serwer1910176.home.pl/31817028_blood_reserves?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>             
+ 
+</Context>

@@ -1,0 +1,35 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+    <session-factory>
+ 
+        <!-- Connection settings -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+              <!-- Sample MySQL URL provided - localhost test data  -->  
+       <property name="connection.url">jdbc:mysql://localhost:3306/accessor</property>  
+        <property name="connection.username">root</property> 
+      <property name="connection.password">root</property> 
+        
+     <!--    <property name="connection.url">jdbc:mysql://serwer1910176.home.pl:3306/31817028_accessor?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;autoReconnect=true&amp;failOverReadOnly=false&amp;maxReconnects=10</property> --> 
+     <!--    <property name="connection.username">31817028_accessor</property>  -->
+     <!--    <property name="connection.password">niVAac2r#@43!</property> -->
+           
+       
+        <!-- Use the C3P0 connection pool provider -->
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.timeout">30</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+        <property name="hibernate.c3p0.idle_test_period">3000</property>
+           
+        <!-- Don't show SQL on console -->
+        <property name="show_sql">false</property>
+ 
+		<!--Setting Session context model -->
+		<property name="current_session_context_class">thread</property>
+ 
+    </session-factory>
+</hibernate-configuration>
