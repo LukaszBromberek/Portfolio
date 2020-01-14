@@ -85,7 +85,7 @@
             <i class="fab fa-linkedin-in"></i>
           </a>
           <a href="https://github.com/LukaszBromberek/Portfolio">
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github">https://github.com/LukaszBromberek/Portfolio/tree/master</i>
           </a>
         </div>
       </div>
